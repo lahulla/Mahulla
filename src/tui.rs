@@ -1,4 +1,3 @@
-
 pub type Tui = ratatui::Terminal<ratatui::backend::CrosstermBackend<std::io::Stdout>>;
 
 pub fn init() -> std::io::Result<Tui> {
@@ -28,3 +27,7 @@ pub fn restore() -> std::io::Result<()> {
     crossterm::terminal::disable_raw_mode()?;
     Ok(())
 }
+
+//
+// Highlight
+//
